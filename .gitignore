@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .DS_Store
 Thumbs.db
 db.json
@@ -5,3 +6,27 @@ db.json
 node_modules/
 public/
 .deploy*/
+=======
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+>>>>>>> 0713d4dbc67822c7ed11d22be443a7b7882402f3
