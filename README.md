@@ -3,35 +3,38 @@
 #### 项目介绍
 用于github.io的仓库
 
-#### 软件架构
-软件架构说明
+# 基于HEXO的博客发布流程
+##  安装
+1. 安装node 和 git,具体步骤略过
+2. 安装hexo的命令行工具
+`npm install -g hexo-cli`
+3. 安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。
 
+```
+hexo init <folder>
+cd <folder>
+npm install
+``` 
+新建完成后，指定文件夹的目录如下：
 
-#### 安装教程
+```.
+├── _config.yml
+├── package.json
+├── scaffolds
+├── source
+|   ├── _drafts
+|   └── _posts
+└── themes
+```
+4. 新建文章
+`hexo new "My New Post"`
+5. 生成静态文章
+`hexo generate`
+6. 启动服务器,本地查看。默认情况下，
+`hexo server`
+访问网址为： `http://localhost:4000/`。
+7. 确认无误后发布博客。（需要先配置_config.yml中的deploy选项）
+`hexo deploy`
+8. 如果不生效，先执行 `hexo clean`,然后重复5，6，7步
 
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [http://git.mydoc.io/](http://git.mydoc.io/)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+其他操作查看 [hexo官网](https://hexo.io/zh-cn/index.html)
