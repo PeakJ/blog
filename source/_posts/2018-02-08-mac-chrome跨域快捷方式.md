@@ -13,6 +13,7 @@ categories:
 
 每次开启跨域都需要重新敲命令，比较麻烦，下面介绍一种简单的方式，利用Mac自带的automator创建一个应用程序。
 ***
+<!-- more -->
 1. command+ 空格打开，输入automator回车打开automator
 
 2. 选择应用程序，点击选取

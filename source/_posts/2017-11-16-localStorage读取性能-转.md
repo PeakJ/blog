@@ -9,6 +9,7 @@ categories:
 在Web开发人员使用的工具中，Web Storage（http://dev.w3.org/html5/webstorage/） 迅速成为了HTML5新增的最受欢迎的功能。具体来说，localStorage提供了快速简单的客户端数据存储功能，可以跨多个会话存储数据，这使得localStorage在世界各地Web开发人员中被广为应用。通过使用简单的键值接口，我们看到很多网站以各种独特而有趣的方式应用localStorage这一技术。
 Disqus（http://www.disqus.com/） ，是一个非常流行的反馈管理系统。它使用localStorage来实时保存您正在输入的评论。因此，即使有可怕的意外发生，你也可以重启浏览器，从出现问题之前的地方继续。
 谷歌（http://www.google.com/） 和Bing（http://www.bing.com/） 用localStorage存储JavaScript和CSS，来改善他们的移动网站性能。
+<!-- more -->
 在我了解的案例中，Google/Bing的这种方式似乎越来越受人们的欢迎。部分原因是由于HTML5 application cache使用困难，部分原因是该技术得到了Steve Souders和其他人的青睐。事实上，随着我越来越多地和人们提及localStorage以及用它来存储UI相关信息是多么的有用，我发现更多人开始尝试这种技术。
 我发现一个令人费解的现象，人们在使用localstorage时有一个内定不成文的假设：从localStorage读取数据开销不大。我曾经从其他开发者那里听到传言说遇到异常的性能问题，所以我设计了一个实验来量化localStorage的性能特点，以确定用它读取数据的实际成本。
 
