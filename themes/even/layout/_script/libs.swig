@@ -14,6 +14,7 @@
     fancybox: fancybox_js,
     pjax: pjax_js,
     nprogress: nprogress_js,
+    spider: 'spider/spider_background.js'
   }
 %}
 
