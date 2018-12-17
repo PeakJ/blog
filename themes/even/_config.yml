@@ -75,7 +75,7 @@ leancloud:
   app_key:
 
 # Baidu Analytics
-baidu_analytics:
+baidu_analytics: b662e09de1b3608f73d62bb96f213a99
 # Baidu Verification
 baidu_verification:
 
@@ -93,7 +93,7 @@ changyan:
   appkey:
 
 #LiveRe
-livere_datauid:
+livere_datauid: MTAyMC80MTY3OS8xODIyNQ==
 
 # ===========================================
 # Version
