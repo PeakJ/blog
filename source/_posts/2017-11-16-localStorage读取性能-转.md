@@ -23,13 +23,13 @@ Disqus（[http://www.disqus.com/](http://www.disqus.com/)），是一个非常�
 2.1　基准测试
 
 不久前，我创建并共享了一个简单的基准测试，来测量从localStorage取值和从一个对象属性取值的性能。有人基于这个测试做了改良，并开发了更可靠的版本（[http://jsperf.com/localstorage-vs-objects/10](http://jsperf.com/localstorage-vs-objects/10)）。最终结果是：每个浏览器中，从localStorage读取数据比从对象属性中读取相同数据慢几个数量级。到底有多慢呢？请看图2-1所示（数字越高越好）。
-![图2-1基准测试](https://upload-images.jianshu.io/upload_images/1231991-699ca44578825027.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图2-1基准测试](https://s2.ax1x.com/2019/06/28/ZKXIHg.png)
 
 
 看了这个图后，你可能会感到困惑，因为它似乎没有展示出从localStorage中读取数据的结果。事实上它被展现出来了，你看不到它的原因是这一数字实在太小，在图示比例上甚至不可见。除了Safari 5可以显示实际的localStorage的读取数据结果，所有其他浏览器的巨大差异使得你根本不可能在这张图上看到实际数据。当我调整y轴的值后，你才可以看到不同浏览器中的测量结果。
 
 通过改变y轴的比例，现在你可以看到从local Storage和从对象属性读取数据的真实对比（见图2-2）。可以看出，结果仍然如此，几乎到了滑稽的程度，这是为什么呢？
-![图2-2测试结果](https://upload-images.jianshu.io/upload_images/1231991-f498c766aa81d4b4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![图2-2测试结果](https://s2.ax1x.com/2019/06/28/ZKjVKK.png)
 
 
 2.2　这是怎么回事

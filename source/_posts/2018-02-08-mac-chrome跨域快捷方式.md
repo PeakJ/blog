@@ -17,16 +17,16 @@ categories:
 1. command+ 空格打开，输入automator回车打开automator
 
 2. 选择应用程序，点击选取
-![](https://upload-images.jianshu.io/upload_images/1231991-15ccfdbdd7d8671e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://s2.ax1x.com/2019/06/28/ZKOxkd.png)
 3. 选择实用工具中的shell脚本，双击之后输入
 >    ```open -n /Applications/Google\ Chrome.app/ --args --disable-web-security --user-data-dir=/Users/yourname/MyChromeDevUserData/```
 
-![](https://upload-images.jianshu.io/upload_images/1231991-63b137aa69983e3c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://s2.ax1x.com/2019/06/28/ZKXP6f.png)
 4. 关闭并重命名，保存到应用程序，点击存储
-![](https://upload-images.jianshu.io/upload_images/1231991-2be3260cf3b095d8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://s2.ax1x.com/2019/06/28/ZKXets.png)
 这时候就可以Launchpad种看到创建的应用了
-![](https://upload-images.jianshu.io/upload_images/1231991-d102665723f211d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://s2.ax1x.com/2019/06/28/ZKXK10.png)
 5. 为了以后启动方便可以拖动到程序坞中保留
 
-![](https://upload-images.jianshu.io/upload_images/1231991-4c74f8a704f56d36.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://s2.ax1x.com/2019/06/28/ZKXQXT.png)
 至此，跨域Chrome的快捷启动方式就完成了！

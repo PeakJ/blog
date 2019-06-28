@@ -33,7 +33,7 @@ function logData() {
 
 ### 兼容性
 beacon api 的兼容性如下：
-![caniuse 兼容性信息](https://upload-images.jianshu.io/upload_images/1231991-2d7681813dfb7893.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1024)
+![caniuse 兼容性信息](https://s2.ax1x.com/2019/06/28/ZKxrHU.png)
 
 在不支持的浏览器中，可以使用以下 fallback 代码解决浏览器不支持 Beancon API 的问题（仅实现了 GET 方法）。
 ```
