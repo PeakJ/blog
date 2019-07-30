@@ -2,8 +2,8 @@
   <article class="post">
    {% if not is_home() %}
     <div>
-      <span>本文共<span class="post-count" style="color: #ef342a;">{{ wordcount(post.content) }}</span>个字</span>
-      <span>阅读完需<span class="post-count" style="color: #ef342a;">{{ min2read(post.content) }}</span>分钟</span>
+      <span>本文共 <span class="post-count" style="color: #ef342a;">{{ wordcount(post.content) }}</span> 个字</span>
+      <span>阅读完需 <span class="post-count" style="color: #ef342a;">{{ min2read(post.content) }}</span> 分钟</span>
     </div>
    {% endif %}
     <header class="post-header">
