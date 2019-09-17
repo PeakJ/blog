@@ -19,7 +19,7 @@ jobs:
         node-version: '10.x'
     - name: env prepare
       env:
-        ACTIONS_PRI: ${{secrets.ACTION_DEPLOY_KEY}}
+        ACTION_DEPLOY_KEY: ${{secrets.ACTION_DEPLOY_KEY}}
       run: |
         mkdir -p ~/.ssh/
         echo "$ACTION_DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa
