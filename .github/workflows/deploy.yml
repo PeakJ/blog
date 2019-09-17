@@ -19,10 +19,10 @@ jobs:
         node-version: '10.x'
     - name: env prepare
       env:
-        ACTIONS_PRI: ${{secrets.ACTIONS_PRI}}
+        ACTIONS_PRI: ${{secrets.ACTION_DEPLOY_KEY}}
       run: |
         mkdir -p ~/.ssh/
-        echo "$ACTIONS_PRI" > ~/.ssh/id_rsa
+        echo "$ACTION_DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan github.com >> ~/.ssh/known_hosts
         # ssh-keyscan git.coding.net >> ~/.ssh/known_hosts
