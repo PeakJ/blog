@@ -21,20 +21,35 @@ categories:
 图片设置header
 ```javascript
 var oReq = new XMLHttpRequest();
-oReq.open("GET", "yourpage.jsp", true);
+oReq.open("GET", "https://s2.ax1x.com/2019/07/30/eJHI81.png", true);
 oReq.setRequestHeader("Your-Header-Here", "Value");
 // use multiple setRequestHeader calls to set multiple values
 oReq.responseType = "arraybuffer";
 oReq.onload = function (oEvent) {
+  
   var arrayBuffer = oReq.response; // Note: not oReq.responseText
   if (arrayBuffer) {
     var u8 = new Uint8Array(arrayBuffer);
-    var b64encoded = btoa(String.fromCharCode.apply(null, u8));
+    var b64encoded = btoa(arrayBufferToString(u8));
     var mimetype="image/png"; // or whatever your image mime type is
-    document.getElementById("yourimageidhere").src="data:"+mimetype+";base64,"+b64encoded;
+    document.getElementById("testImg").src="data:"+mimetype+";base64,"+b64encoded;
   }
 };
 oReq.send(null);
+function arrayBufferToString(buffer) {
+  var bufView = new Uint16Array(buffer)
+  var length = bufView.length
+  var result = ''
+  var addition = Math.pow(2, 16) - 1
+
+  for (var i = 0; i < length; i += addition) {
+    if (i + addition > length) {
+      addition = length - i
+    }
+    result += String.fromCharCode.apply(null, bufView.subarray(i, i + addition))
+  }
+  return result
+}
 ```
 
 参考链接：[Img src path with header params to pass](https://stackoverflow.com/questions/23609946/img-src-path-with-header-params-to-pass)
