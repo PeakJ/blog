@@ -33,4 +33,4 @@ jobs:
         npm i
     - name: gen
       run: |
-        hexo generate && hexo deploy
+        hexo clean && hexo generate && hexo deploy
