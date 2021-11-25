@@ -16,12 +16,12 @@
         <span class="button" onclick="play()">播放</span>
       </div>
       </div>
-      <video src="http://cctvalih5ca.v.myalicdn.com/live/cctv1_2/index.m3u8" controls></video>
+      <video src="https://cctvalih5ca.v.myalicdn.com/live/cctv1_2/index.m3u8" controls></video>
       
     </div>
     <script>
       function play() {
-        var url = document.getElementById('url_input').value|| 'http://cctvalih5ca.v.myalicdn.com/live/cctv1_2/index.m3u8';
+        var url = document.getElementById('url_input').value|| 'https://cctvalih5ca.v.myalicdn.com/live/cctv1_2/index.m3u8';
 
           var video = document.querySelector('video');
           var hls = new Hls();
@@ -48,6 +48,7 @@
 }
 .header{
     width: 100%;
+    text-align: center;
 }
 .header input{
     height: 40px;
