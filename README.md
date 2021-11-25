@@ -7,6 +7,7 @@
 
 # 基于HEXO的博客发布流程
 ##  安装
+0. node版本需要10.x,推荐v10.24.1
 1. 安装node 和 git,具体步骤略过
 2. 安装hexo的命令行工具
 `npm install -g hexo-cli`
