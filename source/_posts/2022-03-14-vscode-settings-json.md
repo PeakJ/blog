@@ -7,6 +7,7 @@ categories:
 
 ```json
 {
+  "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true
@@ -33,9 +34,8 @@ categories:
   },
   "terminal.integrated.fontFamily": "Cartograph CF,MesloLGS NF, Menlo, Monaco, 'Courier New', monospace",
   "window.dialogStyle": "custom",
-  "window.nativeTabs": true,
   "window.zoomLevel": 2,
-  "workbench.colorTheme": "Vitesse Dark",
+  "workbench.colorTheme": "Vue Theme",
   "workbench.editor.wrapTabs": true,
   "workbench.editorAssociations": {
     "*.md": "vscode.markdown.preview.editor"
@@ -43,6 +43,6 @@ categories:
   "workbench.fontAliasing": "antialiased",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.list.smoothScrolling": true,
-  "workbench.productIconTheme": "icons-carbon"
+  "workbench.productIconTheme": "fluent-icons"
 }
 ```
