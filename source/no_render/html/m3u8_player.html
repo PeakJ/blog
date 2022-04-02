@@ -25,7 +25,7 @@
         var url = document.getElementById('url_input').value|| testUrl;
 
           var video = document.querySelector('video');
-          var hls = new Hls();
+          var hls = new Hls({debug: true});
           hls.loadSource(url);
           hls.attachMedia(video);
           hls.on(Hls.Events.MANIFEST_PARSED, function() {
