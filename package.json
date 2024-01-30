@@ -3,7 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.8.0"
+    "version": "3.9.0"
+  },
+  "scripts": {
+    "g": "hexo generator",
+    "s": "hexo server",
+    "d": "hexo deploy",
+    "c": "hexo clean"
   },
   "dependencies": {
     "hexo": "^3.8.0",
@@ -21,5 +27,8 @@
     "hexo-server": "^0.2.2",
     "hexo-wordcount": "^6.0.1",
     "live2d-widget-model-haruto": "^1.0.5"
+  },
+  "volta": {
+    "node": "10.24.1"
   }
 }

@@ -34,5 +34,6 @@
 
     {% include '_script/libs.swig' %}
     {% include '_script/theme.swig' %}
+    {% include '_script/clarity.swig' %}
   </body>
 </html>
