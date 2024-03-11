@@ -3,7 +3,7 @@
 # ===========================================
 
 # Site creation time
-since: 2016
+since: 2015
 
 # Custom your favicon.ico in `site/source`
 favicon: /favicon.ico
@@ -18,10 +18,10 @@ rss: default
 # ===========================================
 menu:
   Home: /
-  Archives: /archives/
-  Tags: /tags/
-  Categories: /categories/
-  About: /about/
+  # Archives: /archives/
+  # Tags: /tags/
+  # Categories: /categories/
+  # About: /about/
 
 # ===========================================
 # Theme Settings
@@ -55,13 +55,13 @@ reward:
 # Social links Settings
 # ===========================================
 social:
-  email: jfup3336@gmail.com
+  email: your@email.com
   stack-overflow:
   twitter:
   facebook:
   linkedin:
   google:
-  github: https://github.com/PeakJ
+  github: https://github.com/ahonn
   weibo:
   zhihu:
   douban:
@@ -75,13 +75,13 @@ social:
 
 # LeanCloud
 leancloud:
-  app_id: vJcJkKHJ864RV1KoRQQXaUjP-gzGzoHsz
-  app_key: SagHLnqakLPCqrNgt9DBy1jJ
+  app_id:
+  app_key:
   server_url:
   cdn:
 
 # Baidu Analytics
-baidu_analytics: b662e09de1b3608f73d62bb96f213a99
+baidu_analytics:
 # Baidu Verification
 baidu_verification:
 
@@ -102,7 +102,7 @@ changyan:
   appkey:
 
 #LiveRe
-livere_datauid: MTAyMC80MTY3OS8xODIyNQ==
+livere_datauid:
 
 # Gitalk
 # Demo: https://gitalk.github.io
@@ -118,7 +118,7 @@ gitalk:
   # Gitalk's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en, es-ES, fr, ru, zh-CN, zh-TW
-  language: zh-CN
+  language:
 
 # utterances
 # Docs: https://utteranc.es/
