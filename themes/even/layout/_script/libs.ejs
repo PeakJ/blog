@@ -13,6 +13,6 @@ spider: 'spider/spider_background.js',
 
 <% for (var lib in js_libs) { %>
 <% if (lib) { %>
-<script type="text/javascript" src="<%- url_for('lib') %>/<%- lib %>"></script>
+<script type="text/javascript" src="<%- url_for('lib') %>/<%- js_libs[lib] %>"></script>
 <% } %>
 <% } %>
